@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@150;400;600&display=swap');
+
+html, body {
+	font-family: 'Outline', Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: white;
+	background-color: blue;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+}
+
+#header {
+	background-color: blue;
+	color: white;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+}
+
+#header h1 {
+	color: white;
+	font-size: 3em;
+	margin: 0;
+}
+
+#header img {
+	height: var(--image-size);
+	width: var(--image-size);
+}
+
+#header .text {
+	display: flex;
+	flex-direction: column;
+	margin-top: calc(var(--main-padding) * 2);
+	margin-left: var(--main-padding);
+	margin-bottom: var(--main-padding);
+}
+
+#header .text a {
+	color: gold;
+	font-weight: normal;
+}
+
+#main {
+	min-height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	width: 900px;
+	background-color: white;
+	border-left: 1px solid blue;
+	border-right: 1px solid blue;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+#content .item {
+	margin-left: var(--image-size);
+	margin-top: var(--main-padding);
+	margin-bottom: var(--main-padding);
+	padding: 0 var(--main-padding);
+	color: blue;
+}
+
+#content .item h1 {
+	font-size: 1.15em;
+	margin: 0;
+}
+
+#content .item p {
+	margin: 0.4em 0;
+}
+
+.copyright {
+	color: blue;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		--image-size: 0;
+	}
+	#header {
+		font-size: 0.9em;
+	}
+	#header img {
+		display: none;
+	}
+	#main {
+		width: 100%;
+		border-left-width: 0;
+		border-right-width: 0;
+	}
+}
