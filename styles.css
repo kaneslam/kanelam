@@ -1,103 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@150;400;600&display=swap');
 
 html, body {
-	font-family: 'Outline', Arial, Helvetica, sans-serif;
-	font-size: 14px;
-	color: white;
-	background-color: blue;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	height: 100%;
+    font-family: 'Outline', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: white;
+    background-color: #F2F2F2;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    height: 100%;
 }
 
 #header {
-	background-color: blue;
-	color: white;
-	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
+    background-color: #292929;
+    color: white;
+    padding: 1em;
 }
 
 #header h1 {
-	color: white;
-	font-size: 3em;
-	margin: 0;
+    color: white;
+    font-size: 3em;
+    margin: 0;
 }
 
-#header img {
-	height: var(--image-size);
-	width: var(--image-size);
+#header .social-media-links {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1em;
 }
 
-#header .text {
-	display: flex;
-	flex-direction: column;
-	margin-top: calc(var(--main-padding) * 2);
-	margin-left: var(--main-padding);
-	margin-bottom: var(--main-padding);
-}
-
-#header .text a {
-	color: gold;
-	font-weight: normal;
+#header .social-media-links a {
+    color: gold;
+    margin-left: 0.5em;
 }
 
 #main {
-	min-height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: left;
-	width: 900px;
-	background-color: white;
-	border-left: 1px solid blue;
-	border-right: 1px solid blue;
+    min-height: 100%;
+    margin: 0 auto;
+    text-align: left;
+    width: 900px;
+    background-color: white;
+    border-left: 1px solid #292929;
+    border-right: 1px solid #292929;
+    padding: 1em;
 }
 
 a {
-	text-decoration: none;
-	font-weight: bold;
-	color: blue;
+    text-decoration: none;
+    font-weight: bold;
+    color: #292929;
 }
 
 a:hover {
-	text-decoration: underline;
+    text-decoration: underline;
 }
 
 #content .item {
-	margin-left: var(--image-size);
-	margin-top: var(--main-padding);
-	margin-bottom: var(--main-padding);
-	padding: 0 var(--main-padding);
-	color: blue;
+    margin-bottom: 1em;
+    padding: 1em;
+    background-color: #F2F2F2;
+    border: 1px solid #E5E5E5;
 }
 
 #content .item h1 {
-	font-size: 1.15em;
-	margin: 0;
+    font-size: 1.15em;
+    margin: 0;
+    color: #292929;
 }
 
 #content .item p {
-	margin: 0.4em 0;
+    margin: 0.4em 0;
 }
 
 .copyright {
-	color: blue;
+    color: #292929;
 }
 
 @media screen and (max-width: 900px) {
-	body {
-		--image-size: 0;
-	}
-	#header {
-		font-size: 0.9em;
-	}
-	#header img {
-		display: none;
-	}
-	#main {
-		width: 100%;
-		border-left-width: 0;
-		border-right-width: 0;
-	}
+    body {
+        --image-size: 0;
+    }
+    #header {
+        font-size: 0.9em;
+    }
+    #header img {
+        display: none;
+    }
+    #main {
+        width: 100%;
+        border-left-width: 0;
+        border-right-width: 0;
+    }
 }
